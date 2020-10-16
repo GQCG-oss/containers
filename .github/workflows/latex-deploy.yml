@@ -1,12 +1,10 @@
 name: LaTeX deploy
-
 on:
   push:
     paths:
       - 'latex/Dockerfile'
     branches:
       - 'develop'
-
 jobs:
   build-and-deploy:
     runs-on: ${{ matrix.os }}
@@ -21,6 +19,6 @@ jobs:
         repository: gqcg/latex
         tags: latest
         registry: docker.io
-        dockerfile: Dockerfile
+        dockerfile: latex/Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}

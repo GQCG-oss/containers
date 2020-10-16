@@ -19,3 +19,4 @@ ENV LANGUAGE=en_US.UTF-8 LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8
 # installing cpanm & missing latexindent dependencies
 RUN curl -L http://cpanmin.us | perl - --self-upgrade && \
     cpanm Log::Dispatch::File YAML::Tiny File::HomeDir
+
