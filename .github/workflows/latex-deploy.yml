@@ -19,6 +19,6 @@ jobs:
         repository: gqcg/latex
         tags: latest
         registry: docker.io
-        dockerfile: Dockerfile
+        dockerfile: latex/Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
