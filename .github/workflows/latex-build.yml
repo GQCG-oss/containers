@@ -1,12 +1,10 @@
 name: LaTeX build
-
 on:
   pull_request:
     paths:
       - 'latex/Dockerfile'
     branches:
       - 'develop'
-
 jobs:
   build:
     runs-on: ${{ matrix.os }}

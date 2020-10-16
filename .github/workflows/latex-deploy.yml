@@ -1,12 +1,10 @@
 name: LaTeX deploy
-
 on:
   push:
     paths:
       - 'latex/Dockerfile'
     branches:
       - 'develop'
-
 jobs:
   build-and-deploy:
     runs-on: ${{ matrix.os }}
