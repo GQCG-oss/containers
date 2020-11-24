@@ -1,0 +1,25 @@
+name: GQCP-dev build
+on:
+  pull_request:
+    paths:
+      - 'gqcp-dev/Dockerfile'
+    branches:
+      - 'develop'
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build and push the Docker image
+      uses:  docker/build-push-action@v2
+      with:
+        repository: gqcg/gqcp-dev
+        tags: latest
+        registry: docker.io
+        dockerfile: gqcp-dev/Dockerfile
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
+        push: false
