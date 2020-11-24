@@ -1,9 +1,9 @@
-name: LaTeX build
+name: GQCP-dev build
 
 on:
   pull_request:
     paths:
-      - 'latex/Dockerfile'
+      - 'gqcp-dev/Dockerfile'
     branches:
       - 'develop'
 
@@ -29,6 +29,6 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         context: .
-        file: ./latex/Dockerfile
+        file: ./gqcp-dev/Dockerfile
         push: false
-        tags: gqcg/latex:latest
+        tags: gqcg/gqcp-dev:latest
