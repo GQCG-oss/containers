@@ -3,6 +3,7 @@ name: GQCP-dev build
 on:
   pull_request:
     paths:
+      - '.github/workflows/github-dev-build.yml'
       - 'gqcp-dev/Dockerfile'
     branches:
       - 'develop'

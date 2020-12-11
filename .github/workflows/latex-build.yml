@@ -3,6 +3,7 @@ name: LaTeX build
 on:
   pull_request:
     paths:
+      - '.github/workflows/latex-build.yml'
       - 'latex/Dockerfile'
     branches:
       - 'develop'
