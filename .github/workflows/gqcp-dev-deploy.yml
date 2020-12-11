@@ -3,7 +3,7 @@ name: GQCP-dev deploy
 on:
   push:
     paths:
-      - '.github/workflows/github-dev-deploy.yml'
+      - '.github/workflows/gqcp-dev-deploy.yml'
       - 'gqcp-dev/Dockerfile'
     branches:
       - 'develop'
