@@ -3,10 +3,12 @@ name: LaTeX deploy
 on:
   push:
     paths:
+      - '.github/workflows/latex-deploy.yml'
       - 'latex/Dockerfile'
     branches:
       - 'develop'
 
+jobs:
   build:
     runs-on: ${{ matrix.os }}
     strategy:
