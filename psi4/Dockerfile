@@ -17,7 +17,8 @@ RUN wget \
     && rm -f Miniconda3-py37_4.9.2-Linux-x86_64.sh 
 RUN conda --version
 
-RUN conda install -c psi4 -c conda-forge psi4 jupyter 
+RUN conda install -c psi4 -c conda-forge psi4 jupyter matplotlib pandas scipy 
+RUN pip install plotly plotly-express
 
 RUN ldconfig
 
