@@ -6,3 +6,4 @@ This repo gathers Dockerfiles associated with Docker workflows at GQCG and provi
 
 - [LaTeX](latex/README.md)
 - [GQCP-dev](gqcp-dev/README.md)
+- [PSI4](psi4/README.md)
