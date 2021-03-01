@@ -32,4 +32,4 @@ jobs:
         context: .
         file: ./gqcp-dev/Dockerfile
         push: true
-        tags: gqcg/gqcp-dev:latest
+        tags: gqcg/gqcp-dev:libint-2.6.0
