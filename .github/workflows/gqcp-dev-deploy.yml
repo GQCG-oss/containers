@@ -1,7 +1,7 @@
 name: GQCP-dev deploy
 
 on:
-  pull_request:
+  push:
     paths:
       - '.github/workflows/gqcp-dev-deploy.yml'
       - 'gqcp-dev/Dockerfile'
