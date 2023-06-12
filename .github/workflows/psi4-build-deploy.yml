@@ -35,7 +35,7 @@ jobs:
       id: meta
       uses: docker/metadata-action@v4
       with:
-        images: ghcr.io/psi4-docker
+        images: ghcr.io/${{ github.repository}}/psi4-docker
     - name: Build Docker image
       if: ${{ github.event_name == 'pull_request' }}
       uses: docker/build-push-action@v3
@@ -97,4 +97,4 @@ jobs:
       if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/develop' }}
       run: |
         echo "${{ secrets.GITHUB_TOKEN }}" | singularity remote login -u $ --password-stdin oras://ghcr.io
-        singularity push psi4-singularity.sif oras://ghcr.io/psi4-singularity    
+        singularity push psi4-singularity.sif oras://ghcr.io/${{ github.repository }}/psi4-singularity    
