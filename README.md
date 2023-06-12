@@ -4,7 +4,3 @@
 
 This repo gathers Dockerfiles associated with Docker workflows at GQCG and provides CD to [Dockerhub](https://hub.docker.com/orgs/gqcg). Dockerfiles associated with continuously changing Docker images, such as e.g. [GQCP](https://github.com/GQCG/GQCP) should be stored inside that repo.
 
-- [LaTeX](latex/README.md)
-- [GQCP-dev](gqcp-dev/README.md)
-- [PSI4](psi4/README.md)
-- [Bootcamp](bootcamp/README.md)
